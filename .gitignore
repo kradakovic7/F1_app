@@ -1,0 +1,28 @@
+# --- PYTHON (Backend) ---
+backend/f1_cache/
+backend/__pycache__/
+backend/venv/
+backend/.env
+*.pyc
+
+# --- REACT (Frontend) ---
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# --- ANDROID ---
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
