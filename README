@@ -1,0 +1,93 @@
+# 🏎️ F1 Fantasy Manager - Full Stack Application
+
+A comprehensive Formula 1 Fantasy application featuring a Python Flask Backend, React Web Dashboard, and Android Mobile App.
+
+---
+
+## Prerequisites
+
+Ensure you have the following installed:
+* XAMPP (for MySQL Database)
+* Python 3.8+
+* Node.js & npm
+* Android Studio
+
+---
+
+## Installation & Startup Guide
+
+Follow these steps in order to get the app running.
+
+### 1. Database Setup (XAMPP)
+1.  Start **XAMPP Control Panel**.
+2.  Start **Apache** and **MySQL**.
+3.  Open your browser and go to `http://localhost/phpmyadmin`.
+4.  Click **New** (sidebar) and create a database manually with the name: **`f1_fantasy`** (or check your `config.py` if you named it differently).
+
+### 2. Backend (Python API)
+1.  Open a terminal in the project root and navigate to the backend:
+    ```bash
+    cd backend
+    ```
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  Initialize the database and load data:
+    ```bash
+    python seed.py
+    ```
+4.  **Important:** Fetch the 2025 season data:
+    ```bash
+    python fastf1_with_2025_data.py
+    ```
+5.  Start the server:
+    ```bash
+    python run.py
+    ```
+    Server should be running at `http://127.0.0.1:5000`.
+
+> **Troubleshooting: Port 5000 Error**
+> If you get an error saying *"An attempt was made to access a socket in a way forbidden by its access permissions"*, it means Port 5000 is blocked. Also, run VSCode in ADMIN mode. Run these commands in CMD/PowerShell to kill the process:
+> ```bash
+> netstat -ano | findstr :5000
+> taskkill /PID <PID_FROM_ABOVE> /F
+> ```
+> *(Replace `<PID_FROM_ABOVE>` with the number shown in the netstat command, e.g., 4568)*
+
+---
+
+### 3. Frontend (React Web App)
+1.  Open a **new** terminal and navigate to the frontend folder:
+    ```bash
+    cd frontend
+    ```
+2.  Install dependencies (restores `node_modules`):
+    ```bash
+    npm install
+    ```
+3.  Start the application:
+    ```bash
+    npm start
+    ```
+    The browser will automatically open at `http://localhost:3000`.
+
+---
+
+### 4. Mobile App (Android/Kotlin)
+1.  Open **Android Studio**.
+2.  Select **Open** and choose the `android` folder inside this project.
+3.  Wait for Gradle to sync.
+4.  Select an **Emulator** (e.g., Pixel 6) or connect a physical device.
+5.  Click the  **Run** button.
+
+> **Note for Emulator:** The app communicates with `10.0.2.2:5000` (Android's alias for localhost). Ensure the Python backend is running first.
+
+---
+
+## Usage & Login
+
+You can register a new account or use the default admin credentials if you seeded the database:
+
+* **Username:** `Admin`
+* **Password:** `admin123`
