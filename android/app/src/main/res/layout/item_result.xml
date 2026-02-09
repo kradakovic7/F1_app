@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="#2C3034"
+    android:layout_marginBottom="2dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvPos"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VER"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red Bull Racing"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="+12.4s"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/tvPoints"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textColor="#00FF00"
+        android:textStyle="bold"
+        android:gravity="end"/>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#15151E"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F1 HUB"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnFantasy"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="MY FANTASY TEAM"
+        android:backgroundTint="#E10600"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnDrivers"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="DRIVER STANDINGS"
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="RACE CALENDAR"
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="LEADERBOARD"
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE ACCOUNT"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8B0000"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:padding="12dp"/>
+
+</LinearLayout>
